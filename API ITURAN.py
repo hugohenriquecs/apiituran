@@ -8,11 +8,11 @@ import os
 app = Flask(__name__)
 
 # URL base da API da Ituran
-ITURAN_API_URL = "https://iweb.ituran.com.br/ituranwebservice3/Service3.asmx/GetAllPlatformsData?UserName=api@armac&Password=Api@2024Ituran@&ShowAreas=True&ShowStatuses=True&ShowMileageInMeters=False&ShowDriver=True"
+ITURAN_API_URL = "https://iweb.ituran.com.br/ituranwebservice3/Service3.asmx/GetAllPlatformsData?UserName=&Password=@&ShowAreas=True&ShowStatuses=True&ShowMileageInMeters=False&ShowDriver=True"
 
 # Credenciais de autenticação
-ITURAN_USERNAME = "api@armac"
-ITURAN_PASSWORD = "Api@2024Ituran@"
+ITURAN_USERNAME = ""
+ITURAN_PASSWORD = ""
 
 @app.route('/buscar_dados_plataforma', methods=['GET'])
 def buscar_dados_plataforma():
